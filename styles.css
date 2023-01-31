@@ -1,0 +1,45 @@
+.container {
+  margin-top: 10%;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+  border: 2px solid #333;
+  background-color: #eee;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  box-sizing: border-box;
+  border: 2px solid #333;
+  background-color: #00BCD4;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.cell:hover {
+  background-color: #FFC107;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    margin-top: 40%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    margin-top: 30%;
+  }
+}
